@@ -10,4 +10,4 @@ go get "github.com/aws/aws-sdk-go/aws/"
 go get "github.com/aws/aws-sdk-go/service/"
 
 # create the application binary that eb uses
-GOOS=linux GOARCH=amd64 go build -o bin/application -ldflags="-s -w"
+go build -o bin/application application.go
