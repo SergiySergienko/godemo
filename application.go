@@ -60,7 +60,7 @@ func sendDataToKinesis(payloadData []byte) {
 func main() {
 	fmt.Println("Handling http://locahost:8080/")
 	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":5000", nil))
 	
 
 	// flag.Parse()
